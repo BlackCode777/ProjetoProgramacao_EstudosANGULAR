@@ -1,0 +1,16 @@
+# Nome 
+ng new PetScanFinder 
+
+# Documentação da lib quaggaJS
+- https://serratus.github.io/quaggaJS/
+- https://serratus.github.io/quaggaJS/v1.0.0-beta.1/examples/
+- https://github.com/serratus/quaggaJS
+
+- https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
+- 
+
+# Instalação
+- npm install bootstrap
+- npm install quagga
+- npm i angular-font-awesome
+- npm i jquery

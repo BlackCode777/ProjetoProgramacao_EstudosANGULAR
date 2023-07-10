@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+/* Modifiquei a tela de fundo da minha aplicação no arquivo principal " style.css " */
+
+
+/*@import "../node_modules/bootstrap/css/bootstrap";*/
+
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body{
+        /* background-color: rgb(123, 136, 250); */
+        background-image: linear-gradient(#f79055, #7f00f7, #000000);
+}
+html, body { height: 100%; }
+body { 
+        margin: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif;     
+}
+/* h2{
+        color: aliceblue;
+} */

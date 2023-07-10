@@ -1,0 +1,35 @@
+<hr>
+
+<div class="row">
+        <h3>Estudo de NgClass para classes do CSS</h3>
+        <div class="col">                
+                <i class="bi bi-star" [ngClass]="{
+                        'bi-star': !renderEstrela,
+                        'bi-star-fill': renderEstrela
+                }" (click)="onClickNull()" style="font-size: 200px;">
+                </i> <!-- renderEstrela ? 'bi-start' : 'bi-star-fill' -->
+        </div>
+        <div class="col">
+                <!-- <h3>Estudo de NgClass para classes do CSS</h3> -->
+                <i class="bi bi-star" [ngClass]="{
+                        'bi-star': !renderEstrela,
+                        'bi-star-fill': renderEstrela
+                }" (click)="onClickNull()" style="font-size: 200px;">
+                </i> <!-- renderEstrela ? 'bi-start' : 'bi-star-fill' -->
+        </div>
+        <div class="col">
+                <!-- <h3>Estudo de NgClass para classes do CSS</h3> -->
+                <i class="bi bi-star" [ngClass]="{
+                        'bi-star': !renderEstrela,
+                        'bi-star-fill': renderEstrela
+                }" (click)="onClickNull()" style="font-size: 200px;">
+                </i> <!-- renderEstrela ? 'bi-start' : 'bi-star-fill' -->
+        </div>
+        <!-- <div class="col">
+                <i class="bi bi-star-fill" [ngClass]="{
+                                'bi-star-fill': !renderEstrela,
+                                'bi-star': renderEstrela
+                        }" (click)="onClickStrong()" style="font-size: 200px;">
+                </i>
+        </div> -->
+</div>

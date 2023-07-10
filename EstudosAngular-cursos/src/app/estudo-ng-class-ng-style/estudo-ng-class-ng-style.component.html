@@ -1,0 +1,18 @@
+<ng-content select="h3"></ng-content>
+<ng-content select="h3"></ng-content>
+<ng-content select="h3"></ng-content>
+<h3>Estudo-NgClass - manipulando classes css/sass/scss</h3>
+<div>
+        <p [ngClass]=" { 'active': valor, 'disable': !valor } ">NgClass</p>        
+</div>
+<hr>
+<h3>Estudo-NgStyle - manipulando css com ngStyle</h3>
+<div>
+        <p [ngStyle]=" { 
+                'heigth': heigthPX, 
+                'background': background, 
+                'font-size': fontS } ">NgStyle
+        </p>        
+</div>
+
+<ng-content select="h3"></ng-content>

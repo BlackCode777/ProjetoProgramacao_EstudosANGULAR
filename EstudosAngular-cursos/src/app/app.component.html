@@ -1,0 +1,23 @@
+<ng-template [ngIf]="getDados">
+        <h4>{{getDados.nome}} - {{ getDados.idade }}</h4>
+</ng-template>
+<app-transferencia-dado-filho-para-pai (enviarDados)="setDados($event)"></app-transferencia-dado-filho-para-pai>
+<app-novo-component-one></app-novo-component-one>
+<hr>
+<app-transferencia-entre-comp [contador]="addValue"></app-transferencia-entre-comp>
+<button (click)="add()">Add</button>
+<!-- <app-estudo-ng-class-ng-style></app-estudo-ng-class-ng-style> -->
+<!-- <app-estudo-diretiva-ng-for-arrays></app-estudo-diretiva-ng-for-arrays> -->
+<!-- <app-estudo-ng-class-css></app-estudo-ng-class-css> -->
+<!-- <app-estudo-two-way-binding></app-estudo-two-way-binding> -->
+<!-- <app-property-binding *ngIf="destruir"></app-property-binding>
+<app-data-binding-interpolation></app-data-binding-interpolation>
+<app-title title="Adeus Javascript" *ngIf="destruir"></app-title>
+<button (click)="DestruirComponente()" >DestruirComponente</button>
+<app-title title="Adeus Javascript"></app-title>
+<h3>{{ valor }}</h3>
+<button (click)="adicionar()">Adicionar</button> -->
+
+<router-outlet></router-outlet>
+
+

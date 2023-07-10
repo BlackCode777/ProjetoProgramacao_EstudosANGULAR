@@ -1,0 +1,42 @@
+<hr>
+<div>
+        <h3 style="color: aliceblue;">Estudo da Diretiva NgSwitch para tratamento de Arrays e condicionais</h3>
+        <!-- Case de uso NGSWITCH -->
+        <input [(ngModel)]="nomeSwitch">
+        <h3>{{ funcSwitchCase() }}</h3>
+        <!-- <div  *ngFor="let nome of nomeSwitch" > 
+                <div [ngSwitch]="nomeSwitch">
+                        <p *ngSwitchDefault="'generico'">genérico</p>
+                        <p *ngSwitchCase="'anderson'" >Anderson</p>
+                        <p *ngSwitchCase="'andré'">André</p>
+                        <p *ngSwitchCase="'josy'">Josy</p>
+                        <p *ngSwitchCase="'clodoaldo'">Clodoaldo</p>                         
+                </div> -->
+        <!-- </div> -->
+        <!--   
+        <---|--->
+        
+</div>
+
+<hr>
+<div>
+        <h3>Estudo da Diretiva NgFor para tratamento de Arrays</h3>
+
+        <div>
+                <ul>
+                        <li *ngFor="let item of list; let i = index;" (click)="onClickEventList($event)">[ {{i}} ] - Nome : {{ item.nome }} / Idade : {{ item.idade }}</li>
+                </ul>
+        </div>
+
+        <div>
+                <button (click)="onClickListADD()" style="border-radius: 15px; width: 10em;">AddItemList</button>
+        </div>
+
+        <br>
+        <h5>sintaxeHTML: <span>{{ sintaxeHTML }}</span> </h5>
+        <h5>sintaxeTS: <span>{{ sintaxeTS }}</span> </h5>
+
+</div>
+
+
+
