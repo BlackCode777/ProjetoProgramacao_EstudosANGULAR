@@ -1,0 +1,33 @@
+
+<div *ngFor="let algoritmo of algoritmos">
+  <p></p><!-- funcaoLogN_Multiplicacao(algoritmo)-->
+</div>
+
+
+<hr>
+
+<div class="box">
+  <div class="box-header box-title text-center">
+    <!--Centralizar o título no centro da página na hozontal usando bootstrap-->
+    <h3 class="">Algoritmos Estudos</h3>
+  </div>
+  <div class="box-body box-title text-center">
+    <table id="example1" class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>N</th>
+          <th>log N</th>
+          <th>⌊log N⌋</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let algoritmo of algoritmos" >
+          <td>{{algoritmo.N}}</td>
+          <td>{{algoritmo.log_N}}</td>
+          <td>{{algoritmo._log_N_}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

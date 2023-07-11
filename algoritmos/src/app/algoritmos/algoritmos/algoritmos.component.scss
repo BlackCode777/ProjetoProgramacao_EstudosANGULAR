@@ -1,0 +1,23 @@
+/* espaçando a caixa em todos os lados da página */
+:host {
+    /*Criando fundo em degradê de 3 cores para a tela inteira preenchendo todas as partes*/
+    // background: linear-gradient(to right, #00bfff, #00ffff, #0051ff);
+    /*background: linear-gradient(to right, #00bfff, #00ffff, #0051ff);*/
+    /* Centralizando na horizontal */
+    margin: 0 auto;
+    /* Centralizando na vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    display: block;
+    padding: 2rem;
+
+    /* Estilizando o título */
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+}
