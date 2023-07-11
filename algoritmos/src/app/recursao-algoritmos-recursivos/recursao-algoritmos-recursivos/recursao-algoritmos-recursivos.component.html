@@ -1,4 +1,97 @@
-<p>recursao-algoritmos-recursivos works!</p>
+<div class="max-width-card">
+  <h4>Estudo de recursão com algoritmos</h4>
+  <div class="card-algoritmo-recursao">
+    <!--Criando um card -  para explicar o que é um algoritmo recursivo -->
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">O que é um Algoritmo de recursão?</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Muitos problemas computacionais têm a seguinte propriedade: cada
+          instância do problema contém uma instância menor do mesmo problema.
+          Dizemos que esses problemas têm estrutura recursiva. Para resolver uma
+          instância de um problema desse tipo, podemos aplicar o seguinte
+          método:
+        </p>
+      </div>
+      <!--Criando lista-->
+      <div>
+        <ul>
+          <li>
+            Se a instância é pequena, resolva-a diretamente (caso base).
+            <p>resolva-a diretamente (use força bruta se necessário);</p>
+          </li>
+          <li>
+            Se a instância é grande, reduza-a a uma instância menor do mesmo
+            problema (caso recursivo).
+            <p>
+              reduza-a a uma instância menor do mesmo problema, aplique o método
+              à instância menor, volte à instância original.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="card-algoritmo-recursao2">
+    <!--Criando um card -  para explicar o que é um algoritmo recursivo -->
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Exemplo de algoritmo de recursão</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Um exemplo de algoritmo recursivo é o cálculo do fatorial de um
+          número. O fatorial de um número n é o produto de todos os números
+          inteiros positivos menores ou iguais a n. O fatorial de n é denotado
+          por n!.
+        </p>
+        <!--Criando lista-->
+        <div>
+          <ul>
+            <li>Se n = 0, então n! = 1.</li>
+            <li>Se n > 0, então n! = n * (n-1)!.</li>
+          </ul>
+        </div>
+        <p class="card-text">
+          Para ilustrar o conceito de algoritmo recursivo, considere o seguinte
+          problema: Encontrar o valor de um elemento máximo de um vetor
+          v[0..n-1]. (O problema já foi mencionado num dos exercícios na página
+          Vetores.) Observe que o problema só faz sentido se o vetor não é
+          vazio, ou seja, se n ≥ 1. Eis uma função recursiva que resolve o
+          problema:
+        </p>
+      </div>
+    </div>
+  </div>
+  <br />
 
+  <div class="card-algoritmo-recursao3">
+    <div class="card card-result">
+      <div>
+        <p>Resultado: maiorElementoDentroDeUmVetor()</p>
+        <p class="color-number">{{ maiorElementoDentroDeUmVetor(vetor, n) }}</p>
+      </div>
+    </div>
+    <div class="card card-result">
+      <div>
+        <p>Resultado: maiorElementoDentroDeUmVetor()</p>
+        <p class="color-number">
+          {{ maiorElementoDentroDeUmVetor(vetor1, n1) }}
+        </p>
+      </div>
+    </div>
 
+    <div class="card card-result">
+        <div>
+          <p>Resultado: maiorElementoDentroDeUmVetor()</p>
+          <p class="color-number">
+            {{ funcaoEncontraValorElementoMaximo(fEVEMaximo, fEVEMaximoVetor) }}
+          </p>
+        </div>
+      </div>
 
+  </div>
+</div>
