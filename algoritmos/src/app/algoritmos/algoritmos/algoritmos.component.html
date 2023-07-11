@@ -1,10 +1,13 @@
-
-<div *ngFor="let algoritmo of algoritmos">
-  <p></p><!-- funcaoLogN_Multiplicacao(algoritmo)-->
+<!--Usando a função funcaoLogN_Multiplicacao(N) com interpolation-->
+<div class="box-body box-title text-center">
+  <h1>Algoritmos Estudos</h1>
+  <p>{{ "functionTransf() > " }}{{ functionTransf() }}</p>
+  <p>{{ "functionTransf2() > " }}{{ functionTransf2() }}</p>
+  <p>{{ "funcaoLogN_Multiplicacao() > " }}{{ funcaoLogN_Multiplicacao(functionTransf()) }}</p>
+  <p>{{ "funcaoLogN_Divisao() > " }}{{ funcaoLogN_Divisao(functionTransf2()) }}</p>
 </div>
 
-
-<hr>
+<hr />
 
 <div class="box">
   <div class="box-header box-title text-center">
@@ -21,13 +24,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let algoritmo of algoritmos" >
-          <td>{{algoritmo.N}}</td>
-          <td>{{algoritmo.log_N}}</td>
-          <td>{{algoritmo._log_N_}}</td>
+        <tr *ngFor="let algoritmo of algoritmos">
+          <td>{{ algoritmo.N }}</td>
+          <td>{{ algoritmo.log_N }}</td>
+          <td>{{ algoritmo._log_N_ }}</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
-
