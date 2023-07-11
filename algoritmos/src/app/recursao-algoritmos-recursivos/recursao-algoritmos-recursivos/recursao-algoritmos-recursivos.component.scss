@@ -1,23 +1,59 @@
-/* espaçando a caixa em todos os lados da página */
-:host {
-    /*Criando fundo em degradê de 3 cores para a tela inteira preenchendo todas as partes*/
-    // background: linear-gradient(to right, #00bfff, #00ffff, #0051ff);
-    /*background: linear-gradient(to right, #00bfff, #00ffff, #0051ff);*/
-    /* Centralizando na horizontal */
-    margin: 0 auto;
-    /* Centralizando na vertical */
+.max-width-card {
+  padding: 2em;
+  max-width: 1000px;
+  flex-direction: column;
+  /* Centralizando na vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Estilizando o título */
+  h4 {
+    padding: 1em;
+    font-size: 2rem;
+    font-weight: 700;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 60%;
-    display: block;
-    padding: 2rem;
-
-    /* Estilizando o título */
-    h3 {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
+  }
+  .card-algoritmo-recursao {
+    /* centralizando o card na horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+  }
+  .card-algoritmo-recursao2 {
+    /* centralizando o card na horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+  }
+  .card-algoritmo-recursao3 {
+    /* centralizando o card na horizontal */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .card-result div {
+      /*Background degradê*/
+      background: linear-gradient(to right, #aaff00, #00ffff, #aaff00);
+      border-radius: 10px;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      /*alinhamento em colunas*/
+      flex-direction: column;
     }
-
+  }
 }
