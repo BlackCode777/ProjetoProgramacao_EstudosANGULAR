@@ -10,6 +10,11 @@
 
 # Node
 /AnaliseDeCodigoBackEnd/node_modules
+/algoritmos/node_modules
+/app-todo/node_modules
+/EstudosAngular/node_modules
+/PetScanFinder/node_modules
+
 npm-debug.log
 yarn-error.log
 
