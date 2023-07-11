@@ -1,4 +1,10 @@
 <div class="main">    
-    <app-algoritmos></app-algoritmos>
+    <app-recursao-algoritmos-recursivos></app-recursao-algoritmos-recursivos>
+
+    <!--Escondendo as divs com ngIf - depois criarei botões e rotas para acessar cada página separadamente-->
+    <div *ngIf="false">
+        <app-algoritmos></app-algoritmos>
+    </div>
+    
     <router-outlet></router-outlet>
 </div>

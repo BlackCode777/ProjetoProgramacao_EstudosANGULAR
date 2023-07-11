@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlgoritmosModule } from "./algoritmos/algoritmos.module";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RecursaoAlgoritmosRecursivosModule } from './recursao-algoritmos-recursivos/recursao-algoritmos-recursivos.module';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        AlgoritmosModule
+        AlgoritmosModule,
+        RecursaoAlgoritmosRecursivosModule
     ]
 })
 export class AppModule { }
