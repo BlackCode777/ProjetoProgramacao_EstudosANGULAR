@@ -38,15 +38,15 @@
   }
   .card-algoritmo-recursao3 {
     /* centralizando o card na horizontal */
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    .card-result div {
+    margin-left: 5px;
+    .card {
+      margin-left: 10px;
       /*Background degradê*/
-      background: linear-gradient(to right, #aaff00, #00ffff, #aaff00);
-      border-radius: 10px;
+      background: linear-gradient(45deg, #9602f8, #44ff00);
       max-width: 100%;
       display: flex;
       justify-content: center;
@@ -54,6 +54,15 @@
       padding: 1em;
       /*alinhamento em colunas*/
       flex-direction: column;
+
+	  .color-number{
+		color: aliceblue;
+		font-size: 30px;
+		font-weight: 700;
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		justify-content: center;
+	  }
     }
   }
 }
