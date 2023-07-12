@@ -1,6 +1,6 @@
 .max-width-card {
   padding: 2em;
-  max-width: 1000px;
+  max-width: 100%;
   flex-direction: column;
   /* Centralizando na vertical */
   display: flex;
@@ -37,6 +37,15 @@
     padding-bottom: 1em;
   }
   .card-algoritmo-recursao3 {
+    /*Colapsando os cards de acordo com o tamanho da tela*/
+    @media (max-width: 600px){
+        margin: 10px;
+      flex-direction: column;
+    }
+    @media (max-width: 900px){
+      flex-direction: column;
+    }
+
     /* centralizando o card na horizontal */
     display: flex;
     justify-content: center;
@@ -44,6 +53,7 @@
     flex-direction: row;
     margin-left: 5px;
     .card {
+        margin-top: 10px;
       margin-left: 10px;
       /*Background degradê*/
       background: linear-gradient(45deg, #9602f8, #44ff00);
@@ -55,14 +65,14 @@
       /*alinhamento em colunas*/
       flex-direction: column;
 
-	  .color-number{
-		color: aliceblue;
-		font-size: 30px;
-		font-weight: 700;
-		font-family: 'Roboto', sans-serif;
-		display: flex;
-		justify-content: center;
-	  }
+      .color-number {
+        color: aliceblue;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
