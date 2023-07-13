@@ -1,4 +1,4 @@
-<div class="max-width-card">
+<div class="max-width-card container">
   <h4>Estudo de recursão com algoritmos</h4>
   <div class="card-algoritmo-recursao">
     <!--Criando um card -  para explicar o que é um algoritmo recursivo -->
@@ -68,57 +68,65 @@
   </div>
   <br />
 
-  <div class="card-algoritmo-recursao3">
-    <div class="card card-result">
-      <div>
-        <p>Resultado: maiorElementoDentroDeUmVetor()</p>
-        <p class="color-number">{{ maiorElementoDentroDeUmVetor(vetor, n) }}</p>
-      </div>
-    </div>
-    <div class="card card-result">
-      <div>
-        <p>Resultado: maiorElementoDentroDeUmVetor()</p>
-        <p class="color-number">
-          {{ maiorElementoDentroDeUmVetor(vetor1, n1) }}
-        </p>
-      </div>
-    </div>
+  <!-- classe bootstrap pra responsividade em linhas e colunas -->
 
-    <div class="card card-result">
+  <div class=""></div>
+
+  <div class="card-algoritmo-recursao3 container">
+    <div class="row">
+      <div class="card card-result col">
+        <div>
+          <p>Resultado: maiorElementoDentroDeUmVetor()</p>
+          <p class="color-number">
+            {{ maiorElementoDentroDeUmVetor(vetor, n) }}
+          </p>
+        </div>
+      </div>
+
+      <div class="card card-result col">
+        <div>
+          <p>Resultado: maiorElementoDentroDeUmVetor()</p>
+          <p class="color-number">
+            {{ maiorElementoDentroDeUmVetor(vetor1, n1) }}
+          </p>
+        </div>
+      </div>
+
+      <div class="card card-result col">
         <div>
           <p>Resultado: maiorElementoDentroDeUmVetor()</p>
           <p class="color-number">
             {{ funcaoEncontraValorElementoMaximo(fEVEMaximo, fEVEMaximoVetor) }}
           </p>
         </div>
-    </div>
+      </div>
 
-    <div class="card card-result">
+      <div class="card card-result col">
         <div>
           <p>Resultado: maiorElementoDentroDeUmVetor()</p>
           <p class="color-number">
             {{ funcEncValElemM(fEVE, fEVEVetor) }}
           </p>
         </div>
-    </div>
+      </div>
 
-    <div class="card card-result">
+      <div class="card card-result col">
         <div>
           <p>Resultado: programaDeTesteGeraVetorAleatorio()</p>
           <p class="color-number">
             {{ programaDeTesteGeraVetorAleatorio(vetor_1, n_1) }}
           </p>
         </div>
-    </div>
-
-    <div class="card card-result">
-      <div>
-        <p>Resultado: devolveValorElementoMaximoDoVetor()</p>
-        <p class="color-number">
-          {{ devolveValorElementoMaximoDoVetor(vetor0, i0, n0) }}
-        </p>
       </div>
-  </div>
 
+      <div class="card card-result col">
+        <div>
+          <p>Resultado: devolveValorElementoMaximoDoVetor()</p>
+          <p class="color-number">
+            {{ devolveValorElementoMaximoDoVetor(vetor0, i0, n0) }}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
