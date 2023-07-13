@@ -18,6 +18,29 @@ export class RecursaoAlgoritmosRecursivosComponent {
   constructor() {}
   ngOnInit(): void {}
 
+  /* // Recebe v e i < n e devolve o valor de um elemento máximo do vetor v[i..n-1]. */
+  /* 1. Escreva uma função recursiva que receba um vetor v e um inteiro i < n e devolva o valor de um elemento máximo do vetor v[i..n-1].  [Solução: ./solucoes/recu2.html#part1] */
+  public vetor0: number[] = [124, 23, 345, 37, 87, 2, 345, 67];
+  public n0: number = 10;
+  public i0: number = 0;
+  public devolveValorElementoMaximoDoVetor(
+    vetor0: number[],
+    i0: number,
+    n0: number
+  ): number {
+    if (i0 == n0 - 1) {
+      return vetor0[i0];
+    } else {
+      let maior;
+      maior = this.devolveValorElementoMaximoDoVetor(vetor0, i0 + 1, n0);
+      if (maior > vetor0[i0]) {
+        return maior;
+      } else {
+        return vetor0[i0];
+      }
+    }
+  }
+
   /* Programa de teste.  Escreva um pequeno programa para testar a função recursiva maximo dada acima.  O seu 
   programa deve gerar um vetor aleatório e encontrar um elemento máximo desse vetor. Acrescente ao seu programa 
   uma função que confira a resposta dada por maximo.  [Solução: ./solucoes/recu2.html#part2] */
@@ -25,16 +48,16 @@ export class RecursaoAlgoritmosRecursivosComponent {
   public n_1: number = 10;
   programaDeTesteGeraVetorAleatorio(vetor_1: number[], n: number) {
     // Gerando uma variavel de vetor aleatório
-	for (let i = 0; i < n; i++) {
-		vetor_1.push(Math.floor(Math.random() * 1000));
-	}
-	// encontrar um elemento máximo desse vetor
-	let maior = this.maiorElementoDentroDeUmVetor(vetor_1, n);
-	if(maior >= this.maiorElementoDentroDeUmVetor(vetor_1, n)){
-		return maior;
-	}else{
-		return this.maiorElementoDentroDeUmVetor(vetor_1, n);
-	}
+    for (let i = 0; i < n; i++) {
+      vetor_1.push(Math.floor(Math.random() * 1000));
+    }
+    // encontrar um elemento máximo desse vetor
+    let maior = this.maiorElementoDentroDeUmVetor(vetor_1, n);
+    if (maior >= this.maiorElementoDentroDeUmVetor(vetor_1, n)) {
+      return maior;
+    } else {
+      return this.maiorElementoDentroDeUmVetor(vetor_1, n);
+    }
   }
 
   /*8.Critique a seguinte função recursiva que promete encontrar o valor de um elemento máximo de v[0..n-1]*/
